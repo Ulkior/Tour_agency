@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position:absolute;
+    background-color: transparent;
+    overflow: hidden;
+    text-align: right;
+    z-index: 2;
+    margin-top: 10px; /* Отступ сверху */
+    height: 100px; /* Уменьшил высоту навбара */
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.logo_container{
+    position: relative;
+    width: 30%;
+}
+.navlinks{
+    width: 70%;
+}
+.logo {
+    position: absolute;
+    left:0;
+    width: 100px;
+    /* Добавьте нужные стили для вашего логотипа, например: */
+    /* width: 30px; */
+    /* height: auto; */
+}
+
+nav a {
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 12px; /* Уменьшил отступы сверху и снизу для бóльших элементов */
+    text-decoration: none;
+    font-size: 18px; /* Уменьшил размер шрифта */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6cc9ff;
+    font-weight: bold;
+}
+nav a.active-nav-link{
+    color: #6cc9ff;
+}
+
+.poster h1{
+font-size: 6em !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster p{
+    font-size: 2em !important;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.div-tour-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.div-tour-cards .card{
+    width: 31% !important;
+}
+
+.div-tour-cards .card .img{
+    height: -webkit-fill-available;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    height: 100%;
+}
+.img img:hover {
+}
+
+.feature-icon i{
+    font-size: 5rem;
+    color: #013b57 !important;
+}
+
+footer{
+    background-color: #013b57 !important;
+}
+
+.contact-form{
+    display: flex;
+}
+.form-container {
+    position: relative;
+    max-width: 950px !important;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+}
+.form{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.row.second{
+    /*display: flex;*/
+}
+.row.second div{
+}
+
+
+.row.message{
+    display: flex;
+    flex-display: column !important;
+}

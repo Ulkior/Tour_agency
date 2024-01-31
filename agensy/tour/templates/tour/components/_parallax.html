@@ -1,0 +1,46 @@
+<!-- Ваш существующий код -->
+
+<div class="parallax-section">
+    <div class="overlay"></div> <!-- Затемненный фон -->
+    <div class="parallax-text">
+        <p>Ваш идеальный Приключенческий опыт</p>
+        <p>Мероприятия и проживание</p>
+    </div>
+</div>
+
+<!-- Продолжение вашего существующего кода -->
+
+<style>
+    .parallax-section {
+        position: relative;
+        height: 500px; /* Высота секции */
+        background: url('https://get.wallhere.com/photo/sea-cityscape-bay-lake-nature-Tourism-coast-river-town-fjord-mountain-landform-geographical-feature-mountain-range-86588.jpg') center/cover no-repeat fixed;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .parallax-section .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Затемненный фон с прозрачностью */
+        z-index: -1; /* Помещаем затемненный фон под контент */
+    }
+
+    .parallax-section .parallax-text {
+        font-size: 2.5em; /* Увеличиваем размер текста */
+        margin: 0;
+        color: #ffffff; /* Цвет текста (белый) */
+        font-family: 'Your Font', sans-serif; /* Замените 'Your Font' на ваш выбор шрифта */
+    }
+
+    .parallax-section .parallax-text p {
+        margin: 15px 0; /* Добавляем отступ между абзацами */
+    }
+</style>

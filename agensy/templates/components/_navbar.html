@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название вашего сайта</title>
+</head>
+<body>
+
+
+<nav class="container-fluid">
+    <div class="logo_container">
+        {% if white %}
+            <img src="{% static 'tour/images/logo/Logo_white.png' %}" alt="Логотип" class="logo">
+        {% else %}
+            <img src="{% static 'tour/images/logo/Logo_black.png' %}" alt="Логотип" class="logo">
+        {% endif %}
+    </div>
+    <div class="navlinks">
+        {% for n in nav %}
+            {% if active == n.title %}
+                <a class="active-nav-link" href="{% url n.link %}">{{n.title}}</a>
+            {% else %}
+                <a href="{% url n.link %}">{{n.title}}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</nav>
+
+<!-- Здесь добавьте содержимое вашего сайта -->
+
+</body>
+</html>

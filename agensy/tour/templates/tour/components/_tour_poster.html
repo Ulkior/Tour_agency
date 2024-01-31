@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Постер</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .poster {
+            position: relative;
+            width: 100%;
+            height: 60vh; /* Немного увеличил высоту постера */
+            background: url('https://luxoboi.com.ua/pic/product_foto/prodfoto3985.jpg') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .poster-text {
+            z-index: 1;
+            font-size: 18px; /* Уменьшил размер шрифта */
+            color: white;
+        }
+        .poster-text h2{
+            font-size: 4rem;
+            color: white;
+            border-bottom: 5px solid white;
+    }
+    </style>
+</head>
+<body>
+
+<div class="poster">
+    <div class="overlay"></div>
+    <div class="poster-text">
+        <h2>Доступные Туры</h2>
+    </div>
+</div>
+
+<!-- Здесь добавьте содержимое вашего сайта -->
+
+</body>
+</html>
